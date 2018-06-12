@@ -1,0 +1,51 @@
+<!DOCTYPE html><!-- Bootstrap 要求设置 HTML5 doctype -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 添加一个 viewport 标签让页面正确支持响应式布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Popovers</title>
+</head>
+<body>
+<!--
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+
+<!-- Four directions
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on right
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on bottom
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on left
+</button> -->
+
+<!-- Dismiss on next click
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a> -->
+
+<!-- Disabled elements -->
+<span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+  <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+</span>
+
+
+<script src="../bootstrap/js/jquery.slim.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    //One way to initialize all popovers on a page would be to select them by their data-toggle attribute
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    })
+</script>
+</body>
+</html>
