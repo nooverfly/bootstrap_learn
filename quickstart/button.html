@@ -1,0 +1,95 @@
+<!DOCTYPE html><!-- Bootstrap 要求设置 HTML5 doctype -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 添加一个 viewport 标签让页面正确支持响应式布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>按钮</title>
+</head>
+<body>
+<!-- 不同样式的按钮 -->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+
+<!-- 按钮类可用于 <a>, <button>, 或 <input> 元素上 -->
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+<!-- 按钮设置边框 -->
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+<!-- 按钮大小 -->
+<div>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+    <!-- 块级按钮:通过添加 .btn-block 类可以设置块级按钮 -->
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+</div>
+
+<!-- 激活和禁用的按钮:.active 类可以设置按钮是可用的， disabled 属性可以设置按钮是不可点击的。
+ 注意 <a> 元素不支持 disabled 属性，你可以通过添加 .disabled 类来禁止链接的点击。-->
+<div>
+    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+    <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+</div>
+
+<!-- 按钮插件 -->
+<!-- 开关状态:Add data-toggle="button" to toggle a button’s active state.
+If you’re pre-toggling a button, you must manually add the .active class and aria-pressed="true" to the <button>. -->
+<div>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Single toggle
+    </button>
+</div>
+
+<!-- Checkbox and radio 按钮 -->
+<div class="btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+        <input type="checkbox" checked autocomplete="off"> Checked
+    </label>
+</div>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    </label>
+</div>
+按钮事件:$().button('toggle')和$().button('dispose')
+
+
+<script src="../bootstrap/js/jquery.slim.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
